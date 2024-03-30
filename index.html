@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family:serif;
+    }
+
+    body {
+      background-color: rgb(8, 8, 61);
+      color: white;
+      
+
+    }
+    nav{
+      display:flex;
+      justify-content:space-around;
+      align-items: center;
+      height:100px;
+      background-color:rgb(42, 42, 93) ;
+    }
+    nav ul{
+      display:flex;
+      justify-content: center;
+    }
+    nav ul li{
+      list-style:none;
+      margin:0 23px;
+    }
+    nav ul li a{
+      text-decoration: none;
+      color:white;
+    }
+    nav ul li a:hover{
+      color:rgb(145, 145, 227);
+      font-size: 1.03rem;
+    }
+    .left{
+      font-size:1.5rem;
+    }
+    .firstsection{
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      margin:100px 0;
+    }
+    .leftsection{
+     
+      font-size:3rem;
+      
+     
+    }
+    .rightsection img{
+      width:80%;
+      
+      
+    }
+
+    .firstsection > div{
+      width:30%;
+      
+    }
+    .purple{
+      color:rgb(159, 72, 240);
+    }
+    #element{
+      color:rgb(159, 72, 240);
+    }
+    .secondsection{
+      max-width:80vw;
+      margin:auto;
+    }
+       main hr{
+        border:0;
+      background:rgb(175, 175, 252);
+      height:1.2px;
+      margin:60px 84px;
+      } 
+      .secondsection h1{
+        font-size:2.5rem;
+        height:80px;
+        text-decoration: underline;
+      }
+      .text-gray{
+        color:gray;
+      }
+      .secondsection .box{
+        background:rgb(175, 175, 252);
+        width:80vw;
+        height:2px;
+        margin:120px 0;
+        display:flex;
+        align-items: center;
+      }
+      .tictac a{
+        color:white;
+        font-size:25px;
+        
+      }
+      .tictac a:hover{
+        color: #380ea1;
+      }
+      .tictac img{
+        height:100px;
+        margin-left: 150px;
+      }
+      .shoewebsite a{
+        color:white;
+        font-size:25px;
+        
+      }
+      .shoewebsite a:hover{
+        color: #380ea1;
+      }
+
+      .shoewebsite img{
+        height:200px;
+        margin-left: 150px;
+      }
+      .iwtlab a{
+        color:white;
+        font-size:25px;
+      }
+      .iwtlab img{
+        height:200px;
+        margin-left: 150px;
+      }
+      .iwtlab a:hover{
+            color: #380ea1;
+      }
+      .thirdsection{
+          max-width:80vw;
+          margin:auto;
+        
+      }
+      .img img{
+        height:400px;
+        margin-left:400px;
+        margin-top:0px;
+        
+      }
+      .thirdsection h1{
+        text-decoration: underline;
+        align-content: center;
+      
+      }
+      .secondsection .box2{
+        background:rgb(175, 175, 252);
+        width:80vw;
+        height:2px;
+        margin:120px 0;
+        display:flex;
+        align-items: center;
+      }
+      #text{
+        margin-left: 550px;
+        
+      }
+      .fourthsection{
+        max-width:80vw;
+        margin:auto;
+
+      
+    }
+    .fourthsection p{
+      
+      text-align:center;
+    }
+    .fourthsection h1{
+      text-align:center;
+    }
+    .fourthsection .box3{
+      background:rgb(175, 175, 252);
+      width:80vw;
+      height:2px;
+      margin:120px 0;
+      display:flex;
+      align-items: center;
+    }
+    .myimage img{
+      height:400px;
+      margin-top: 70px;
+      margin-left:500px;
+      
+     
+    }
+    .resume {
+      background-color: #5c27e4; 
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 40px 2px;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-left: 200px;
+      margin-left: 575px;
+
+    }
+    
+    .resume:hover {
+      background-color: #551d8d; 
+    }
+
+    .lastsection{
+      max-width:80vw;
+      margin:auto;
+
+    
+  }
+  .lastsection .box4{
+    background:rgb(175, 175, 252);
+    width:80vw;
+    height:2px;
+    margin:120px 0;
+    display:flex;
+    align-items: center;
+  }
+    .lastsection h1{
+      text-align:center;
+    }
+   
+    
+
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-form .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .contact-form label {
+      font-weight: bold;
+    }
+    
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #5c27e4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .contact-form button:hover {
+      background-color: #551d8d;
+    }
+    
+    .contact-info {
+      margin-top: 20px;
+    }
+    
+    .contact-info h2 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+    
+    .contact-info ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .contact-info ul li {
+      margin-bottom: 10px;
+    }
+    
+    .contact-info ul li a {
+      color: #5c27e4;
+      text-decoration: none;
+    }
+    
+    .contact-info ul li a:hover {
+      text-decoration:line-through;
+    }
+    
+    .links li{
+      text-align: center;
+      font-size: 20px;;
+     
+    }
+    
+   
+    .contact-info h2{
+      text-align: center;
+      text-decoration:underline;
+    }
+    
+    
+     
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Rishu's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                 <li> <a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstsection">
+      <div class="leftsection" id="home">Hi, My name is <br><span class="purple">Rishu Anand</span>
+      <div>And I am a Passionate</div>
+      
+      <span id="element"></span>
+    </div>
+    
+      <div class="rightsection">
+        <img src="bg.png"/>
+      </div>
+    </section>
+    <hr>
+    
+      <section class="secondsection">
+        <span class="text-gray">What I have Done So Far</span>
+        <h1 id="projects">Projects</h1>
+        <br>
+        <br>
+        <br>
+        <div class="tictac"><a href="https://github.com/rishu911/Tic-Tac-Toe" target="blank">Tic Tac Toe</a>
+          <p>Tic Tac Toe Game using HTML CSS and JS</p>
+          <br>
+        <img src="tic-tac-toe.png"/></div>
+        <br>
+        <br>
+        <br>
+        <div class="shoewebsite"><a href="https://github.com/rishu911/shoe-website" target="blank">Shoe Website</a>
+          <p>Show Website Using HTML and CSS</p>
+          <br>
+          <img src="project.png"></div>
+          <br>
+          <br>
+          <br>
+
+        <div class="iwtlab"><a href="https://github.com/rishu911/iwt_lab_work_2116811" target="blank">IWT Lab302</a>
+          <p>Lab Exercises of IWT Lab302</p>
+          <br>
+        <img src="lab.png"/></div>
+        <div class="box">
+       
+        </div>
+
+        <section class="thirdsection">
+
+        <h1 id="skills">Skills</h1>
+  
+         
+        <div class="img"> 
+          <img src="web.png"/>
+
+        </div>
+        <br>
+        <br>
+        <p id="text"><b>HTML | CSS | JS | C++</b></p>
+        
+        <div class="box2">
+
+        </div>
+
+        </section>
+         
+
+      
+
+    <section class="fourthsection">
+      <h1 id="about">About</h1>
+      <p>Hello there! I'm Rishu Anand, a passionate and dedicated IT student currently pursuing my third year in BTech. With a keen interest in software development and a solid foundation in HTML, CSS, JavaScript, and C++, I am enthusiastic about crafting innovative solutions to real-world problems.</p>
+<div class="myimage">
+  <img src="picture.jpg"/>
+
+</div>
+<button class="resume" id="resume">Resume</button>
+      <div class="box3">
+
+      </div>
+
+
+
+    </section>
+    <section class="lastsection">
+      <h1 id="contact">Contact Me</h1>
+   
+      <div class="contact-form">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="contact-info">
+          <h2>Connect with me</h2>
+          <ul class="links">
+            <li><a href="https://github.com/rishu911" target="_blank" >GitHub</a></li>
+            <li><a href="mailto:anandrishu94@gmail.com">Email</a></li>
+
+            <li>Phone: +91 9117326455</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="box4">
+
+      </div>
+
+    </section>
+  </main>
+  
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'IT 3rd Year Student'],
+      typeSpeed: 50,
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
